@@ -11,7 +11,7 @@ import SwiftUI
 struct MindShowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BreatheStateView(rhythm: BreatheRhythm())
         }
     }
 }
