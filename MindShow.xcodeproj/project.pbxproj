@@ -23,6 +23,7 @@
 		9DEBDFF82797E10E00E151BC /* BreatheStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreatheStateView.swift; sourceTree = "<group>"; };
 		9DEBDFF92797E10F00E151BC /* BreatheRhythm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreatheRhythm.swift; sourceTree = "<group>"; };
 		9DEBDFFA2797E10F00E151BC /* Breathe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Breathe.swift; sourceTree = "<group>"; };
+		9DEBDFFE2797ED1F00E151BC /* MindShow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MindShow.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		9DEBDFE92797E0E700E151BC /* MindShow */ = {
 			isa = PBXGroup;
 			children = (
+				9DEBDFFE2797ED1F00E151BC /* MindShow.entitlements */,
 				9DEBDFEA2797E0E700E151BC /* MindShowApp.swift */,
 				9DEBDFFA2797E10F00E151BC /* Breathe.swift */,
 				9DEBDFF92797E10F00E151BC /* BreatheRhythm.swift */,
@@ -274,6 +276,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MindShow/MindShow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MindShow/Preview Content\"";
@@ -292,6 +295,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lvmama.MindShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MindShow/MindShow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MindShow/Preview Content\"";
@@ -321,6 +326,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lvmama.MindShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

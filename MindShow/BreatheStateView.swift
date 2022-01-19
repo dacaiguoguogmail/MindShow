@@ -28,13 +28,12 @@ struct BreatheStateView: View {
                 RoundedRectangle(cornerRadius: 5 + rhythm.intensity * 70)
                     .frame(width: 50 + rhythm.intensity * 100, height: 50 + rhythm.intensity * 100)
                     .foregroundColor(Color(red: 0.7, green: rhythm.intensity, blue: 0.7))
-                Image(uiImage: self.iconImage)
+                Image(uiImage: iconImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 50, height: 50)
                     .task {
-                        print("iconImage")
-                        self.iconImage =  await rhythm.loadWebImage()
+                        iconImage = await rhythm.loadWebImage()
                     }
             }
             .onTapGesture {

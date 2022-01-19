@@ -29,10 +29,6 @@ class BreatheRhythm: ObservableObject {
     }
 
     func beginIn() {
-        let a: Int? = 1
-        let b: Int? = nil
-        print( a ?? "22")
-        print( b ?? "22")
         var count = 10
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { timer in
             guard count < 50 else {
@@ -59,9 +55,9 @@ class BreatheRhythm: ObservableObject {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         self.beginIn()
                     }
-                } else if self.countOfBreath >= self.countOfBreathMax {
+                } else {
                     self.countOfBreath = 0
-                    self.breath.deep = 0
+                    self.breath.deep = 0.25
                 }
                 return
             }
@@ -77,7 +73,7 @@ class BreatheRhythm: ObservableObject {
 
     func loadWebImage() async -> UIImage {
         do {
-            let image =  try await self.fetchPhoto(url: URL(string: "https://p6-passport.byteacctimg.com/img/user-avatar/9ccfbcb48d9ddf36da228dab88732966~300x300.image")!)
+            let image = try await self.fetchPhoto(url: URL(string: "https://p6-passport.byteacctimg.com/img/user-avatar/9ccfbcb48d9ddf36da228dab88732966~300x300.image")!)
             return image
         } catch {
             return UIImage(systemName: "wifi.exclamationmark")!
